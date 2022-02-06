@@ -1,3 +1,7 @@
+# C Kwa ?
+Un moyen de jouer à https://sutom.nocle.fr/ depuis son terminal.
+
 # Usage
 
-Compile with `cargo build --release`. The executable can be found in the folder `target/release`. 
+Compiler avec la commande `cargo build --release`. 
+L'executable se trouve dans le dossier `target/release`. 

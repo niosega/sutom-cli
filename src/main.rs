@@ -75,6 +75,7 @@ fn main() {
     let mot_du_jour = mot_du_jour::mot_du_jour();
     let frequences = frequences_lettre(&mot_du_jour);
 
+    println!("Mot de {} lettres !", mot_du_jour.chars().count());
     for idx in 0..mot_du_jour.chars().count() {
         if idx == 0 {
             print!("{}", mot_du_jour.chars().nth(0).unwrap());
