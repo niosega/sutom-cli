@@ -30,7 +30,8 @@ fn verifie_mot(mot_joueur: &String, mot_du_jour: &String) -> Result<bool, &'stat
     for idx in 0..long_jour {
         if mot_du_jour.chars().nth(idx) == mot_joueur.chars().nth(idx) {
             print!("{}", "🟥");
-            // 🟡
+            // TODO: 🟡
+            // Implémenter les lettres mal placées.
         } else {
             error += 1;
             print!("{}", '🟦');
