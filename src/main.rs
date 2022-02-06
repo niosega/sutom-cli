@@ -47,6 +47,15 @@ fn verifie_mot(mot_joueur: &String, mot_du_jour: &String) -> Result<bool, &'stat
 fn main() {
     let mot_du_jour = mot_du_jour::mot_du_jour();
 
+    for idx in 0..mot_du_jour.chars().count() {
+        if idx == 0 {
+            print!("{}", mot_du_jour.chars().nth(0).unwrap());
+        } else {
+            print!(" _ ");
+        }
+    }
+    print!("\n");
+
     let mut idx = 0;
     loop {
         let mut buffer = String::new();
